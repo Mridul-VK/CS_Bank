@@ -23,7 +23,7 @@ namespace Database
         public static UserDataModel getUser(string cardNum)
         {
             UserDataModel[] allUsers = getAllUsers();
-            UserDataModel user = Array.Find(allUsers, (UserDataModel user) => { return user.cardNum == cardNum; });
+            UserDataModel user = Array.Find(allUsers, (UserDataModel user) => { return cardNum == user.cardNum; });
             return user;
         }
 			
