@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "firstname": "Mridul",
+      "lastname": "Vinod Kumar",
+      "cardNum": "UI074M5NJCRV",
+      "pin": 1234,
+      "balance": 2500
+    },
+    {
+      "firstname": "Naman",
+      "lastname": "Singh",
+      "cardNum": "OJNRWJPKVZRD",
+      "pin": 1234,
+      "balance": 200
+    },
+    {
+      "firstname": "John",
+      "lastname": "Doe",
+      "cardNum": "VN49C2YILT8K",
+      "pin": 7104,
+      "balance": 3050
+    }
+  ]
+}
