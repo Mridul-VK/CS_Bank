@@ -20,6 +20,20 @@
       "cardNum": "UI074M5NJCRV",
       "pin": 1234,
       "balance": 2520
+    },
+    {
+      "firstname": "Tiago",
+      "lastname": "Forte",
+      "cardNum": "90L0XFO6V4JK",
+      "pin": 5123,
+      "balance": 5000
+    },
+    {
+      "firstname": "Wizard",
+      "lastname": "Singh",
+      "cardNum": "XZI5PRRYGNVV",
+      "pin": 1234,
+      "balance": 2000
     }
   ]
 }

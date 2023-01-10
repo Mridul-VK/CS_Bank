@@ -6,19 +6,21 @@ namespace Account
     public class AccountActions
     {
 
-        public static void deposit(string cardNum, int pin)
+        public static void validation(UserDataModel user, int pin)
         {
-            UserDataModel user = Db.getUser(cardNum);
             if (user == null)
             {
                 throw new Exception("User not found");
             }
 
-            if (pin != user.pin)
+            if (Convert.ToInt32(Convert.ToString(pin).Substring(0,4)) != user.pin)
             {
                 throw new Exception("Invalid Pin");
             }
-
+        }
+        
+        public static void deposit(UserDataModel user, string cardNum, int pin)
+        {
             Console.Write("Enter amount to be deposited: ₹");
             double amount = Convert.ToDouble(Console.ReadLine());
 
@@ -29,19 +31,8 @@ namespace Account
             Console.WriteLine("Cash deposit succesful 🎉");
         }
 
-        public static void withdraw(string cardNum, int pin)
+        public static void withdraw(UserDataModel user, string cardNum, int pin)
         {
-            UserDataModel user = Db.getUser(cardNum);
-            if (user == null)
-            {
-                throw new Exception("User not found");
-            }
-
-            if (pin != user.pin)
-            {
-                throw new Exception("Invalid Pin");
-            }
-
             Console.Write("Enter amount to be withdrawn: ₹");
             double amount = Convert.ToDouble(Console.ReadLine());
             if (user.balance < amount)
@@ -57,20 +48,9 @@ namespace Account
             Console.WriteLine("Cash withdrawal succesful 🎉");
         }
 
-        public static double showBalance(string cardNum, int pin)
+        public static void showBalance(UserDataModel user, string cardNum, int pin)
         {
-            UserDataModel user = Db.getUser(cardNum);
-            if (user == null)
-            {
-                throw new Exception("User not found");
-            }
-
-            if (pin != user.pin)
-            {
-                throw new Exception("Invalid Pin");
-            }
-
-            return user.balance;
+            Console.WriteLine("Your current balance is: " + user.balance);
         }
     }
 }

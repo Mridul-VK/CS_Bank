@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Fiopx+uO4ZAhe2E/58zrR7kc68irWRyjJgRQKyaqwUb9jvzOuS5t8V0r5hY9MZJZUSsy4dd392Y7/52aU50wdg==",
+  "dgSpecHash": "XJYJ2gkjJHS2TekduSXPDuo99gvFy9Qd9AwdfPuV4OcyzKuVCsaqPYNbclCFIVQbni82Ea5NzSrsvc9re8QfPg==",
   "success": true,
-  "projectFilePath": "/home/runner/First-C-program/main.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/CS_Bank_v2/main.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.12/microsoft.netcore.app.host.linux-x64.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
