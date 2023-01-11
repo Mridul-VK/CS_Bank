@@ -61,7 +61,7 @@ namespace Utilities
 			}
 			catch (Exception e)
 			{
-				Console.WriteLine(e);
+				Console.WriteLine(e.message);
 				Console.WriteLine("\n Exiting ATM Mode");
 				return;
 			}
@@ -86,7 +86,7 @@ namespace Utilities
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e);
+                        Console.WriteLine(e.message);
 						Console.WriteLine("\nExiting ATM mode!");
                         return;
                     }
